@@ -1,0 +1,131 @@
+a.create-btn {
+    padding: 1px 6px;
+    border: 1px outset maroon;
+    border-radius: 3px;
+    color: maroon;
+    background-color: white;
+    text-decoration: none;
+}
+
+/* styles for index */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+#title{
+    text-transform: uppercase;
+    color: maroon;
+    text-align: center;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: maroon;
+}
+.card-content {
+    margin-bottom: 20px;
+}
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.card-button {
+    background-color: maroon;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    flex: 1;
+    margin: 0 5px;
+}
+.card-button:hover {
+    background-color: white;
+    color: maroon;
+    box-shadow:0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+
+/* styles for new */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px 20px 20px 20px;
+    width: 350px;
+}
+form div {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    width: 96%;
+    padding: 8px 0 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: maroon;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+form button:hover {
+    background-color: white;
+    color: maroon;
+    box-shadow:0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: maroon;
+}
+a:hover {
+    text-decoration: underline;
+    box-shadow:0 6px 6px hsl(0deg 0% 0% / 0.3);
+
+}

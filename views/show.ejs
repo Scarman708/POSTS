@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h1>details page </h1>
+    </div>
+    <div class="container">
+        <% if (posts.length > 0) { %>
+            <% posts.forEach(item => { %>
+                <div class="card">
+                    <div class="card-header"><%= item.username %></div>
+                    <div class="card-content"><%= item.content %></div>
+                    <div class="card-buttons">
+                        <a class="create-btn" href="/post/<%= item.uuid %>">See in detail</a>
+                        <button class="card-button">Button 1</button>
+                        <button class="card-button">Button 2</button>
+                    </div>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <h3>No posts found.</h3>
+        <% } %>
+    </div>
+</body>
+
+</html>

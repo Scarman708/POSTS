@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsFeed</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">welcome to NewsFeed</h1> <a  class="create-btn" href="http://localhost:3000/post/new"> Create New post</a>
+        
+        
+    </div>
+    <div class="container"> <% data.forEach(item => { %>
+        <div class="card">
+            <div class="card-header"><%= item.username %></div>
+            <div class="card-content"><%= item.content %></div>
+            <div class="card-buttons">
+                <a class="create-btn" href="/post/<%= item.uuid %>">See in detail</a>
+                <a class="create-btn" href="post/edit/<%= item.uuid %>">Edit Post</a>
+               <form method="post" action="post/<%= item.uuid %>?_method=delete">
+                <button class="card-button">Button 2</button>
+            </form>
+            </div>
+        </div>
+    <% }); %>
+</div>
+</body>
+</html>
